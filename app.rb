@@ -4,9 +4,11 @@ class Battle < Sinatra::Base
     set:sessions, true
     
     get '/' do
-      "Hello battle" "\n" "I win"
+     "Testing infrastructre working!"
     end
-
+    get '/players' do
+      erb:index
+    end
     run! if app_file == $0
 end
 
