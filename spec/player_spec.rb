@@ -13,9 +13,5 @@ describe Player do
       end
     end
 
-    describe "#receive_damage" do
-        it "player receives damage" do
-            expect {francis.receive_damage}.to change {francis.hp}.by(-10)
-        end
-    end
+
   end

@@ -17,8 +17,8 @@ feature "attack damage" do
         sign_in_and_play
         click_link 'attack'
         click_link 'ok'
-        expect(page).not_to have_content 'Francis: 60HP'
-        expect(page).to have_content 'Francis: 50HP'
+        expect(page).not_to have_content 'Francis : 60HP'
+        expect(page).to have_content 'Francis : 50HP'
     
     end
 end
